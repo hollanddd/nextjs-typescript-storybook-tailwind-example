@@ -3,7 +3,7 @@ import React from 'react';
 /**
  * Default button style
  */
-const css = 'text-white font-bold m2'
+const css = 'text-white uppercase m2'
 const brand = 'bg-blue-800';
 const secondary = 'bg-gray-500';
 /**
@@ -32,6 +32,7 @@ export const Button: React.FC<ButtonProps> = ({
   size = ButtonSizes.MEDIUM,
   color = undefined,
   label,
+  tw = '',
   ...props
 }) => {
   // button bg color setting
@@ -39,7 +40,7 @@ export const Button: React.FC<ButtonProps> = ({
   return (
     <button
       type="button"
-      className={[css, `${sizes[size]}`,  mode].join(' ')}
+      className={[css, `${sizes[size]}`, mode, tw].join(' ')}
       {...props}
     >
       {label}
@@ -66,6 +67,10 @@ export interface ButtonProps {
    * Button contents
    */
   label: string;
+  /**
+   * Optional tailwind class
+   */
+  tw: string;
   /**
    * Optional click handler
    */
