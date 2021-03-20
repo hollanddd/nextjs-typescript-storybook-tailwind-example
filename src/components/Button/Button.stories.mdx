@@ -1,0 +1,66 @@
+<!--- Button.stories.mdx -->
+
+import { Meta, Story, Canvas } from '@storybook/addon-docs/blocks';
+import { Button, ButtonSizes } from './index';
+
+<Meta title="Atoms/Button" component={Button} />
+
+<!--- This is your Story template function, shown here in React -->
+
+export const Template = (args) => <Button {...args} />
+
+# Button
+
+## Colors
+<Canvas>
+  <Story name="Primary" args={{
+    label: 'Primary',
+    primary: true
+  }}>
+    {Template.bind({})}
+  </Story>
+  <Story name="Secondary" args={{
+    label: 'Secondary'
+  }}>
+    {Template.bind({})}
+  </Story>
+</Canvas>
+
+Allows tailwind <a href="http://tailwindcss.com/docs/background-color/" target="_blank">colors</a>
+
+<Story name="Custom Color" args={{
+  label: 'Custom Color',
+  color: 'bg-green-800'
+}}>
+  {Template.bind({})}
+</Story>
+
+## Sizes
+<Canvas>
+  <Story name="Large" args={{
+    label: 'Large',
+    size: ButtonSizes.LARGE
+  }}>
+    {Template.bind({})}
+  </Story>
+  <Story name="Default" args={{
+    label: 'Medium'
+  }}>
+    {Template.bind({})}
+  </Story>
+  <Story name="Small" args={{
+    label: 'Small',
+    size: ButtonSizes.SMALL
+  }}>
+    {Template.bind({})}
+  </Story>
+</Canvas>
+
+### Full Width
+<Story name="Full Width" args={{
+  label: 'Full Width',
+  size: ButtonSizes.FULL
+}}>
+  {Template.bind({})}
+</Story>
+
