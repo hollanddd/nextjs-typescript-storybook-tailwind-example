@@ -1,17 +1,16 @@
 import Head from 'next/head';
 import { FC } from 'react';
-import { Button } from '../components/Button';
+import { Footer } from '../components/Footer';
 
 const Home: FC = () => {
   return (
     <>
       <Head>
-        <title>Project example</title>
+        <title>Project Example</title>
       </Head>
       <main className="container mx-auto">
-        <h1>Main</h1>
-        <Button label="Click here" color="bg-green-400" />
       </main>
+      <Footer />
     </>
   );
 };
