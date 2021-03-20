@@ -1,0 +1,16 @@
+<!--- InputBox.stories.mdx -->
+
+import { Meta, Story, Canvas } from '@storybook/addon-docs/blocks';
+import { InputBox } from './InputBox';
+
+<Meta title="Atoms/Input" component={InputBox} />
+
+# Input 
+
+<!--- This is your Story template function, shown here in React -->
+
+export const Template = (args) => <InputBox {...args} />
+
+<Story name="Default" args={{}}>
+  {Template.bind({})}
+</Story>

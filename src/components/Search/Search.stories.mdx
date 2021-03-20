@@ -1,0 +1,16 @@
+<!--- Search.stories.mdx -->
+
+import { Meta, Story, Canvas } from '@storybook/addon-docs/blocks';
+import { Search } from './Search';
+
+<Meta title="Group/Search" component={Search} />
+
+# Search
+
+<!--- This is your Story template function, shown here in React -->
+
+export const Template = (args) => <Search {...args} />
+
+<Story name="Default" args={{}}>
+  {Template.bind({})}
+</Story>

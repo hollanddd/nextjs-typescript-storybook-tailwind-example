@@ -1,0 +1,34 @@
+<!--- PageCard.stories.mdx -->
+
+import { Meta, Story, Canvas } from '@storybook/addon-docs/blocks';
+import { PageCard } from './PageCard';
+
+<Meta title="Atoms/PageCard" component={PageCard} />
+
+# PageCard
+
+<!--- This is your Story template function, shown here in React -->
+
+export const Template = (args) => <PageCard {...args} />
+
+<Canvas>
+  <Story name="Default" args={{}}>
+    {Template.bind({})}
+   </Story>
+  <Story name="Colored" args={{
+    color: 'border-green-400'
+  }}>
+    {Template.bind({})}
+   </Story>
+  <Story name="Previous" args={{
+    shift: true
+  }}>
+    {Template.bind({})}
+   </Story>
+  <Story name="Labled" args={{
+    shift: false,
+    label: 'this is shifted false' 
+  }}>
+    {Template.bind({})}
+   </Story>
+</Canvas>
