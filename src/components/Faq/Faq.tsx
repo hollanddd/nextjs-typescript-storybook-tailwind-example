@@ -22,7 +22,7 @@ export const FaqItem: FC<Props> = ({ question, answer }) => {
 
   return (
       <div className="border-b">
-        <button onClick={() => { toggle() }} aria-label="Open item" title="Open item" className="flex items-center justify-between w-full p-4 focus:outline-none">
+        <div onClick={() => { toggle() }} className="flex items-center justify-between w-full p-4 focus:outline-none">
           <p className="text-lg font-medium">{question}</p>
 	  <svg
 	    xmlns="http://www.w3.org/2000/svg"
@@ -33,7 +33,7 @@ export const FaqItem: FC<Props> = ({ question, answer }) => {
 	  >
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 13l-7 7-7-7m14-8l-7 7-7-7" />
           </svg>
-        </button>
+        </div>
         <div className={`${hidden ? 'hidden' : ''} p-4 pt-0`}>
 	  <p className="text-gray-700">
 	    {answer}
