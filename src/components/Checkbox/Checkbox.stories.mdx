@@ -13,7 +13,7 @@ export const Template = (args) => <Checkbox {...args} />
 
 <Canvas>
   <Story name="Unchecked" args={{
-      label: 'Unchecked'
+      label: 'Unchecked',
     }}>
     {Template.bind({})}
    </Story>
@@ -28,11 +28,12 @@ export const Template = (args) => <Checkbox {...args} />
     }}>
     {Template.bind({})}
    </Story>
-  <Story name="Secondary" args={{
-    label: 'Secondary',
-    checked: true,
-    appearance: 'secondary'
-  }}>
+  <Story name="Color" args={{
+      label: 'Unchecked',
+      border: 'border-purple-600',
+      primary: 'bg-red-500',
+      alt: 'bg-green-400'
+    }}>
     {Template.bind({})}
    </Story>
 </Canvas>
