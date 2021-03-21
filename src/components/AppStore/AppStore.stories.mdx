@@ -1,0 +1,16 @@
+<!--- AppStore.stories.mdx -->
+
+import { Meta, Story, Canvas } from '@storybook/addon-docs/blocks';
+import { AppStore } from './AppStore';
+
+<Meta title="Group/AppStore" component={AppStore} />
+
+# App Store Call-to-Action
+
+<!--- This is your Story template function, shown here in React -->
+
+export const Template = (args) => <AppStore {...args} />
+
+<Story name="Default" args={{}}>
+  {Template.bind({})}
+</Story>

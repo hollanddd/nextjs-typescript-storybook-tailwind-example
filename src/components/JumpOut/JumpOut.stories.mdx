@@ -1,0 +1,18 @@
+<!--- JumpOut.stories.mdx -->
+
+import { Meta, Story, Canvas } from '@storybook/addon-docs/blocks';
+import { JumpOut } from './JumpOut';
+
+<Meta title="Section/JumpOut" component={JumpOut} />
+
+# JumpOut
+
+<!--- This is your Story template function, shown here in React -->
+
+export const Template = (args) => <JumpOut {...args} />
+
+<Canvas>
+  <Story name="Default" args={{}}>
+    {Template.bind({})}
+  </Story>
+</Canvas>
