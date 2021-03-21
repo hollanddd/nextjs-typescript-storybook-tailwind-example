@@ -1,0 +1,25 @@
+<!--- Stats.stories.mdx -->
+
+import { Meta, Story, Canvas } from '@storybook/addon-docs/blocks';
+import { Stats } from './Stats';
+
+<Meta title="Group/Stats" component={Stats} />
+
+# Stats
+
+<!--- This is your Story template function, shown here in React -->
+
+export const Template = (args) => <Stats {...args} />
+
+<Canvas>
+  <Story name="Default" args={{
+    stats: [
+      { label: 'Downloads', metric: '144k' },
+      { label: 'Subscribers', metric: '12.9k' },
+      { label: 'Users', metric: '48.3k' },
+      { label: 'Cookies', metric: '24.5k', last: true },
+    ]
+  }}>
+    {Template.bind({})}
+  </Story>
+</Canvas>
