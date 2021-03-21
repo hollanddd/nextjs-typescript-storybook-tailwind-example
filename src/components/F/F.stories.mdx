@@ -1,0 +1,18 @@
+<!--- Name.stories.mdx -->
+
+import { Meta, Story, Canvas } from '@storybook/addon-docs/blocks';
+import { F } from './F';
+
+<Meta title="ZZZ/F" component={F} />
+
+# F
+
+This (F)ile is copy driven development `cp -R F NewComponent`
+
+<!--- This is your Story template function, shown here in React -->
+
+export const Template = (args) => <F {...args} />
+
+<Story name="Default" args={{}}>
+  {Template.bind({})}
+</Story>

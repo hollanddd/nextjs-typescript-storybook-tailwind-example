@@ -1,0 +1,16 @@
+<!--- Content.stories.mdx -->
+
+import { Meta, Story, Canvas } from '@storybook/addon-docs/blocks';
+import { Content } from './Content';
+
+<Meta title="Section/Content" component={Content} />
+
+# Hero
+
+<!--- This is your Story template function, shown here in React -->
+
+export const Template = (args) => <Content {...args} />
+
+<Story name="Default" args={{}}>
+  {Template.bind({})}
+</Story>

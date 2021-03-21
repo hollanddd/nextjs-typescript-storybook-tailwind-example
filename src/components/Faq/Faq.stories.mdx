@@ -1,0 +1,23 @@
+<!--- Name.stories.mdx -->
+
+import { Meta, Story, Canvas } from '@storybook/addon-docs/blocks';
+import { Faq } from './Faq';
+
+<Meta title="Section/Faq" component={Faq} />
+
+# FAQ
+
+<!--- This is your Story template function, shown here in React -->
+
+export const Template = (args) => <Faq {...args} />
+
+<Story name="Default" args={{
+  questions: [
+    { question: 'Who', answer: 'That dude' },
+    { question: 'What', answer: 'That thing' },
+    { question: 'Where', answer: 'That place' },
+    { question: 'When', answer: 'That time' },
+  ]
+}}>
+  {Template.bind({})}
+</Story>
