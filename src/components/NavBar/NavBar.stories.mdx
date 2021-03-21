@@ -1,0 +1,24 @@
+<!--- NavBar.stories.mdx -->
+
+import { Meta, Story, Canvas } from '@storybook/addon-docs/blocks';
+import { NavBar } from './NavBar';
+
+<Meta title="Group/NavBAr" component={NavBar} />
+
+# NavBar
+
+<!--- This is your Story template function, shown here in React -->
+
+export const Template = (args) => <NavBar {...args} />
+
+<Story name="Default" args={{
+  items: [
+    {label: 'Home'},
+    {label: 'Products'},
+    {label: 'Srevices'},
+    {label: 'About'},
+    {label: 'Media'},
+  ]
+}}>
+  {Template.bind({})}
+</Story>
