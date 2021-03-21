@@ -1,0 +1,16 @@
+<!--- Search.stories.mdx -->
+
+import { Meta, Story, Canvas } from '@storybook/addon-docs/blocks';
+import { Subscription } from './Subscription';
+
+<Meta title="Forms/Subscription" component={Subscription} />
+
+# Subscription Form 
+
+<!--- This is your Story template function, shown here in React -->
+
+export const Template = (args) => <Subscription {...args} />
+
+<Story name="Default" args={{}}>
+  {Template.bind({})}
+</Story>

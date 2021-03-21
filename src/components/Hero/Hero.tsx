@@ -1,7 +1,7 @@
 import React, { FC } from 'react';
+import { Subscription } from '../Subscription';
 
-interface Props {
-}
+interface Props {}
 
 export const Hero: FC<Props> = ({}) => {
   return (
@@ -16,30 +16,17 @@ export const Hero: FC<Props> = ({}) => {
       <h2 className="mb-6 font-sans text-3xl font-bold tracking-tight text-white sm:text-4xl sm:leading-none">
         The quick, brown fox<br className="hidden md:block" />
         jumps over a
-        <span className="relative inline-block">
+        <span className="relative inline-block pl-3">
           lazy dog
-          <div className="w-full h-3 -mt-3 bg-deep-purple-accent-400"></div>
+          <div className="w-full h-3 -mt-3 bg-purple-500"></div>
         </span>
       </h2>
       <p className="mb-6 text-base font-thin tracking-wide text-gray-300 md:text-lg">
         Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae. explicabo. Sed ut perspiciatis unde omnis.
       </p>
-      <form className="flex flex-col items-center w-full mb-4 md:flex-row md:px-16">
-        <input
-          placeholder="Email"
-          required={false}
-          type="text"
-          className="flex-grow w-full h-12 px-4 mb-3 text-white transition duration-200 bg-transparent border-2 border-gray-400 rounded appearance-none md:mr-2 md:mb-0 focus:border-deep-purple-accent-200 focus:outline-none focus:shadow-outline"
-        />
-        <button
-          type="submit"
-          className="inline-flex items-center justify-center w-full h-12 px-6 font-medium tracking-wide text-white transition duration-200 rounded shadow-md md:w-auto bg-purple-400 hover:bg-purple-700 focus:shadow-outline focus:outline-none"
-        >
-          Subscribe
-        </button>
-      </form>
+      <Subscription placeholder="Subscribe" />
       <p className="max-w-md mb-10 text-xs font-thin tracking-wide text-gray-500 sm:text-sm sm:mx-auto md:mb-16">
-        Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.
+        We don't like spam just as much as you and will never share your info. Shit, I might even help you fight spam if you can show me where it's at.
       </p>
       <a
         href="/"
