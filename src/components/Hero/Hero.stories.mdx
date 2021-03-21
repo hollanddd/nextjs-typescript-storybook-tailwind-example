@@ -1,0 +1,16 @@
+<!--- ProductCard.stories.mdx -->
+
+import { Meta, Story, Canvas } from '@storybook/addon-docs/blocks';
+import { Hero } from './Hero';
+
+<Meta title="Group/Hero" component={Hero} />
+
+# Hero
+
+<!--- This is your Story template function, shown here in React -->
+
+export const Template = (args) => <Hero {...args} />
+
+<Story name="Default" args={{}}>
+  {Template.bind({})}
+</Story>

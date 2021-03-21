@@ -1,0 +1,22 @@
+<!--- ProductCard.stories.mdx -->
+
+import { Meta, Story, Canvas } from '@storybook/addon-docs/blocks';
+import { ProductCard } from './ProductCard';
+
+<Meta title="Group/ProductCard" component={ProductCard} />
+
+# ProductCard
+
+<!--- This is your Story template function, shown here in React -->
+
+export const Template = (args) => <ProductCard {...args} />
+
+<Story name="Default" args={{
+  src: 'https://images.unsplash.com/photo-1542291026-7eec264c27ff?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=320&q=80',
+  title: 'sonic runners',
+  description: 'Fast, fam. Real fast. Red too. Real red. Good enough for him, good enough for you.',
+  cta: 'do it',
+  price: '$109',
+}}>
+  {Template.bind({})}
+</Story>

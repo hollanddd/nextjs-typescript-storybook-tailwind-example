@@ -70,7 +70,7 @@ export interface ButtonProps {
   /**
    * Optional tailwind class
    */
-  tw: string;
+  tw?: string;
   /**
    * Optional click handler
    */

@@ -10,9 +10,9 @@ interface INavItem {
 interface Props extends INavItem {}
 
 export const NavItem: FC<Props> = ({ label, href='#', last }) => {
-  const color = 'text-grey-700 border-transparent';
+  const color = 'text-white border-transparent';
   const active = 'active:text-green-700 active:border-green-700';
-  const hover = 'hover:text-purple-700 hover:border-purple-700';
+  const hover = 'hover:text-purple-400 hover:border-purple-700';
   const base = 'no-underline border-b-2 uppercase tracking-wide font-bold text-xs py-3 mr-8';
   const css = [
     base,
@@ -41,7 +41,7 @@ export const NavBar: FC<{ items: INavItem[] }> = ({ items }) => {
   icon = (
     <svg
       onClick={ () => toggle() }
-      className="fill-current text-purple-700"
+      className="fill-current text-purple-400"
       xmlns="http://www.w3.org/2000/svg"
       width="20"
       height="20"
@@ -52,7 +52,7 @@ export const NavBar: FC<{ items: INavItem[] }> = ({ items }) => {
   )
 
   return (
-    <nav className={`bg-white px-2 pt-2 pb-2`}>
+    <nav className={`bg-gray-900 px-2 pt-2 pb-2`}>
       <label htmlFor="menu-toggle" className="cursor-pointer md:hidden block pt-2" >
        {icon}
       </label>
