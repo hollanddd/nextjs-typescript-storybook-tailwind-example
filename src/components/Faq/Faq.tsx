@@ -31,7 +31,7 @@ export const FaqItem: FC<Props> = ({ question, answer }) => {
 	    stroke="currentColor"
 	    className={`w-3 text-gray-600 ${ hidden ? '' : 'transition-transform duration-200 transform rotate-180'}`}
 	  >
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 13l-7 7-7-7m14-8l-7 7-7-7" />
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 13l-7 7-7-7m14-8l-7 7-7-7" />
           </svg>
         </div>
         <div className={`${hidden ? 'hidden' : ''} p-4 pt-0`}>
